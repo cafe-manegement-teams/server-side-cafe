@@ -1,6 +1,5 @@
 const express = require('express')
 const app = express();
-const db = require('./api/db')
 
 const staffRoute = require('./api/routers/staff.route')
 const loginRoute = require('./api/routers/login.route')
@@ -22,6 +21,6 @@ app.use('/user', registerRoute)
 app.use('/login', loginRoute)
 // GET POST PUT DELETE PATCH
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT;
 app.listen(PORT, () => console.log('Listening on port',PORT))
 
