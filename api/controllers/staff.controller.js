@@ -1,7 +1,4 @@
-const { response } = require('express');
-const express = require('express');
 const Staff = require('../model/staff.model');
-const app = express();
 
 function check_date_input(dateString) {
 	try {
