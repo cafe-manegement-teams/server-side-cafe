@@ -21,5 +21,7 @@ app.use('/staff', staffRoute)
 app.use('/user', registerRoute)
 app.use('/login', loginRoute)
 // GET POST PUT DELETE PATCH
-app.listen(process.env.PORT, () => console.log('Listening on port', process.env.PORT))
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log('Listening on port',PORT))
 
