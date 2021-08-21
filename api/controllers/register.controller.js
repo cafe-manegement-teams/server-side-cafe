@@ -1,7 +1,6 @@
-const fs = require('fs')
 const express = require('express')
 const app = express();
-const shortid = require('shortid');
+// const shortid = require('shortid');
 const bcrypt = require('bcrypt');
 const User = require('../model/user.model')
 
